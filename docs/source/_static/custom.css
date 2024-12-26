@@ -1,0 +1,9 @@
+/* Скрыть кнопку "Следующая" */
+a.btn.btn-neutral.float-right[rel="next"] {
+    display: none;
+}
+
+/* Скрыть кнопку "Предыдущая", если необходимо */
+a.btn.btn-neutral.float-left[rel="prev"] {
+    display: none;
+}

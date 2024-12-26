@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sphinx-docs:
+    build: .
+    ports:
+      - "8000:8000" 
+    volumes:
+      - ./docs/source:/app/docs/source 
+      - ./docs/build:/app/docs/build
+    command: sphinx-autobuild /app/docs/source /app/docs/build/html --host 0.0.0.0
